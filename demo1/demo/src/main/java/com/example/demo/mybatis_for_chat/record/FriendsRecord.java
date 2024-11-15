@@ -1,18 +1,16 @@
 package com.example.demo.mybatis_for_chat.record;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @TableName("friends_record")
+@Data//表名
+@AllArgsConstructor
+@NoArgsConstructor
 public class FriendsRecord {
          private Long id;
-         private String UserId;
-         private String FriendsId;
+         private String userId;
+         private String friendId;
 
-         public Long getId(){return id;}
-
-        public void setFriendsId(String friendsId) {FriendsId = friendsId;}
-
-        public String getFriendsId(){return FriendsId;}
-
-        public void setUserId(String userId) {UserId = userId;}
-
-        public String getUserId(){return UserId;}
 }

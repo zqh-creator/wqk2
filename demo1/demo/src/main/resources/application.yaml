@@ -13,3 +13,17 @@ spring:
       test-on-return: true
       time-between-eviction-runs-milliseconds: 60000
       min-evictable-idle-time-milliseconds: 300000
+
+
+
+
+
+mybatis - plus:
+  configuration:
+    log - impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+logging:
+  level:
+    com.example.dao: debug
+
+server:
+  port: 8080
